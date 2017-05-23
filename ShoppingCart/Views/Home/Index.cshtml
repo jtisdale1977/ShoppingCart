@@ -1,0 +1,309 @@
+﻿@model IEnumerable <ShoppingCart.Models.Item>
+
+<body>
+    <div class="slider-area">
+        <div class="zigzag-bottom"></div>
+        <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
+            
+            <div class="slide-bulletz">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ol class="carousel-indicators slide-indicators">
+                                <li data-target="#slide-list" data-slide-to="0" class="active"></li>
+                                <li data-target="#slide-list" data-slide-to="1"></li>
+                                <li data-target="#slide-list" data-slide-to="2"></li>
+                            </ol>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-one"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2><em>Business Needs</em></h2>
+                                                <a href="@Url.Action("shop", "Home")" class="readmore">Portables</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-two"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2><em>Home Entertainment Needs</em></h2>
+                                                <a href="@Url.Action("shop", "Home")" class="readmore">Tablets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-slide">
+                        <div class="slide-bg slide-three"></div>
+                        <div class="slide-text-wrapper">
+                            <div class="slide-text">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-6">
+                                            <div class="slide-content">
+                                                <h2><em>Or Do You Just Wanna Have Some Fun!</em></h2>
+                                                <a href="@Url.Action("shop", "Home")" class="readmore">Gaming</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>        
+    </div> <!-- End slider area -->
+    
+    <div class="promo-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-refresh"></i>
+                        <p>30 Days return</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-truck"></i>
+                        <p>Free shipping</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-lock"></i>
+                        <p>Secure payments</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-gift"></i>
+                        <p>New products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End promo area -->
+    
+    <div class="maincontent-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="latest-product">
+                        <h2 class="section-title">Latest Products</h2>
+                        <div class="product-carousel">
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/cellphone08.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                <h2>Kambala Phone</h2>
+                                <div class="product-carousel-price">
+
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/mac-folder.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                
+                                <h2>Mac Folder</h2>
+                                <div class="product-carousel-price">
+
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/psp2.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                
+                                <h2>Sony PSP2</h2>
+
+                                <div class="product-carousel-price">
+                                    
+                                </div>                                 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/Collaspable phone.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                
+                                <h2>Drasphone</h2>
+
+                                <div class="product-carousel-price">
+                                    
+                                </div>                            
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/Sony-Nextep-Wrist-Computer.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                
+                                <h2>Sony Nextep Wrist PC</h2>
+
+                                <div class="product-carousel-price">
+                                    
+                                </div>                                 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="~/img/ps4-5.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="@Url.Action("shop", "Home")" class="add-to-cart-link"><i class="fa fa-link"></i> Explore</a>
+                                        <a href="@Url.Action("shop", "Home")" class="view-details-link"><i class="fa fa-link"></i> Details</a>
+                                    </div>
+                                </div>
+                                
+                                <h2>Sony PS4 Pro Concept</h2>
+
+                                <div class="product-carousel-price">
+                                    
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End main content area -->
+    
+    <div class="brands-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-wrapper">
+                        <h2 class="section-title">Brands</h2>
+                        <div class="brand-list">
+                            <img src="~/img/samsung.jpg" alt="">
+                            <img src="~/img/imgTwo.jpg" alt="">
+                            <img src="~/img/Sony_logo-3.jpg" alt="">
+                            <img src="~/img/apple.jpg" alt="">
+                            <img src="~/img/IMG_381749.jpg" alt="">
+                            <img src="~/img/philips_2013_tagline.jpg" alt="">                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End brands area -->
+    
+    <div class="product-widget-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title"><b>Soon To Come...</b></h2>
+                        <div class="single-wid-product">
+                            <img src="~/img/3-.jpg" alt="" />
+                            <h2>Prime Gaming Laptop</h2>
+                            <p>Great news for the gamers, a new concept of prime gaming laptop (Kyle Cherry’s Prime Gaming Laptop) has been introduced. The idea is to add two OLED screens to laptop making a resulting screen of 26 inch which will enhance and enrich the gaming experience. 
+                            The middle screen is 10 inches while the OLED screens add up 16 inches in total making an aspect ratio of 32:10. The body of this laptop is made of Aluminum. The laptop would be having high specs and a powerful graphics card.</p>
+                        </div>
+
+                        <!--#region Additional Product-->
+                        @*<div class="single-wid-product">
+                            <img src="~/img/product-thumb-2.jpg" alt="" class="product-thumb"/>
+                            <h2>Apple new mac book 2015</h2>                           
+                        </div>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-3.jpg" alt="" class="product-thumb"/>
+                            <h2>Apple new i phone 6</h2>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">To</h2>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-4.jpg" alt="" class="product-thumb"/>
+                            <h2>Sony playstation microsoft</h2>                           
+                        </div>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-1.jpg" alt="" class="product-thumb"/>
+                            <h2>Sony Smart Air Condtion</h2>                   
+                        </div>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-2.jpg" alt="" class="product-thumb">
+                            <h2>Samsung gallaxy note 4</h2>                     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Come</h2>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-3.jpg" alt="" class="product-thumb"/>
+                            <h2>Apple new i phone 6</h2>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-4.jpg" alt="" class="product-thumb"/>
+                            <h2>Samsung gallaxy note 4</h2>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <img src="~/img/product-thumb-1.jpg" alt="" class="product-thumb"/>
+                            <h2>Sony playstation microsoft</h2>                            
+                        </div>*@
+                        <!--#endregion-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End product widget area -->
+    
+  </body>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

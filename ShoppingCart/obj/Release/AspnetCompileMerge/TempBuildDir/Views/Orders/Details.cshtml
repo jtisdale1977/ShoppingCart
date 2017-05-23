@@ -1,0 +1,93 @@
+﻿@model ShoppingCart.Models.Order
+
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Shipping Information</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-md-12">
+        <h2 align="center"> Shipping To: </h2>
+        <table cellspacing="0" class="shop_table cart">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Customer.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Customer.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.State)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Zipcode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Country)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Total)
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Customer.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Customer.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Zipcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Country)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Total)
+                </td>
+            </tr>
+            <tr>
+                <td class="actions" colspan="12">
+                    <a href="@Url.Action("Create", "Orders", new { id = Model.Id }))" id="play" class="btn btn-info" role="button">Edit</a>
+                    <a href="@Url.Action("Index")" id="play" class="btn btn-info" role="button">Back To List</a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>

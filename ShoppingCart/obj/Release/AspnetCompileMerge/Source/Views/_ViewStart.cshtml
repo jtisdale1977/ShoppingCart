@@ -1,0 +1,25 @@
+﻿@{
+    var controller = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    string cLayout = "";
+    if (controller == "Account")
+    {
+        cLayout = "~/Views/Shared/_AccountLayout.cshtml";
+    }
+    else if (controller == "Items")
+    {
+        cLayout = "~/Views/Shared/_ItemLayout.cshtml";
+    }
+    else if (controller == "shoppingCarts")
+    {
+        cLayout = "~/Views/Shared/_shoppingCartsLayout.cshtml";
+    }
+    else if (controller == "Orders")
+    {
+        cLayout = "~/Views/Shared/_OrderLayout.cshtml";
+    }
+    else
+    {
+        cLayout = "~/Views/Shared/_Layout.cshtml";
+    }
+    Layout = cLayout;
+}
